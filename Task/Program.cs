@@ -33,3 +33,15 @@ void PrintArray(string[] array)
     }
     Console.WriteLine("]");
 }
+
+string[] arrayOrigin = { "hello", "2", "world", ":-)" };
+
+string[] arrayNew = new string[ArrayLength(arrayOrigin)];
+
+WordBusting(arrayOrigin, arrayNew);
+
+Console.Write("Изначальный массив: ");
+PrintArray(arrayOrigin);
+Console.WriteLine();
+Console.Write("Обработанный массив: ");
+PrintArray(arrayNew);
